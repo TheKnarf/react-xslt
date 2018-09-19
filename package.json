@@ -1,0 +1,38 @@
+{
+  "name": "react-xslt",
+  "version": "0.1.0",
+  "description": "Use components like ApplyTemplate and ValueOf in React",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "npm test -- --coverage",
+    "test:coveralls": "npm run test:coverage && coveralls < ./coverage/lcov.info"
+  },
+  "keywords": [
+    "react",
+    "xml",
+    "xslt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheKnarf/react-xslt"
+  },
+  "author": "Frank Lyder Bredland <fl@nyggen.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.5.2",
+    "xmldom": "^0.1.27",
+    "xpath.js": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "coveralls": "^3.0.2",
+    "jest": "^23.6.0",
+    "react-dom": "^16.5.2"
+  },
+  "files": [
+    "./src/index.js"
+  ]
+}
