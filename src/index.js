@@ -1,6 +1,6 @@
 const React = require('react');
 const xpath = require('xpath.js');
-const { DOMParser as dom } = require('xmldom');
+const dom = require('xmldom').DOMParser;
 
 const ApplyTemplate = ({ xml, select, Component }) => 
 	(xml !== null && typeof xml !== 'undefined') ?
