@@ -1,6 +1,6 @@
-import React from 'react';
-import xpath from 'xpath.js';
-import { DOMParser as dom } from 'xmldom';
+const React = require('react');
+const xpath = require('xpath.js');
+const { DOMParser as dom } = require('xmldom');
 
 const ApplyTemplate = ({ xml, select, Component }) => 
 	(xml !== null && typeof xml !== 'undefined') ?
