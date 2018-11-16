@@ -21,7 +21,7 @@
   "author": "Frank Lyder Bredland <fl@nyggen.com>",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.5.2",
+    "react": "^16.6.3",
     "xmldom": "^0.1.27",
     "xpath.js": "^1.1.0"
   },
@@ -30,7 +30,7 @@
     "babel-preset-react": "^6.24.1",
     "coveralls": "^3.0.2",
     "jest": "^23.6.0",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.6.3"
   },
   "files": [
     "./src/index.js"
