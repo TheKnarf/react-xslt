@@ -5,10 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "prepare": "babel src -d dist --copy-files",
-    "test": "jest",
-    "test:watch": "npm test -- --watch",
-    "test:coverage": "npm test -- --coverage",
-    "test:coveralls": "npm run test:coverage && coveralls < ./coverage/lcov.info"
+    "test": "npm run prepare && jest",
+    "test:watch": "npm test -- --watch"
   },
   "keywords": [
     "react",
@@ -30,11 +28,16 @@
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "coveralls": "^3.0.2",
-    "jest": "^23.6.0"
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "isomorphic-jsx": "^0.2.0",
+    "jest": "^23.6.0",
+    "jsdom": "^13.0.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   },
   "files": [
     "./dist/index.js"
