@@ -14,7 +14,8 @@ const ValueOf = ({ xml, select }) => {
 		return <span />;
 	
 	const query = xpath(xml, select)[0],
-			output = query.nodeValue || query.firstChild.data || [];
+			output = query.nodeValue
+						|| (query.firstChild || {data: [] }).data;
 
 	return output;
 }
