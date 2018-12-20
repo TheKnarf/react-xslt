@@ -11,13 +11,11 @@ const ApplyTemplate = ({ xml, select, Component }) =>
 
 const ValueOf = ({ xml, select }) => {
 	if(xml == null || typeof xml == 'undefined')
-		return <span />;
+		return [];
 	
 	const query = xpath(xml, select)[0],
-			output = query.nodeValue
-						|| (query.firstChild || {data: [] }).data;
 
-	return output;
+	return query.nodeValue || (query.firstChild || {data: [] }).data || [];
 }
 
 module.exports = { xpath, DOMParser, ApplyTemplate, ValueOf };
