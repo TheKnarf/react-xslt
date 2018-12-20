@@ -1,7 +1,7 @@
 import assert from 'assert';
 import { dom as iso } from 'isomorphic-jsx';
 import React from 'React';
-import { xpath, dom as XMLDom , ValueOf, ApplyTemplate } from 'react-xslt';
+import { xpath, DOMParser, ValueOf, ApplyTemplate } from 'react-xslt';
 
 describe('react-xslt', () => {
 

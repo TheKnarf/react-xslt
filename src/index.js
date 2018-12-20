@@ -1,6 +1,6 @@
 const React = require('react'),
 		xpath = require('xpath.js'),
-		DOMParser = require('xmldom'),
+		DOMParser = require('xmldom').DOMParser,
 		dom = React.createElement;
 
 const ApplyTemplate = ({ xml, select, Component }) => 
@@ -19,4 +19,4 @@ const ValueOf = ({ xml, select }) => {
 	return output;
 }
 
-module.exports = { xpath, dom: DOMParser, ApplyTemplate, ValueOf };
+module.exports = { xpath, DOMParser, ApplyTemplate, ValueOf };
