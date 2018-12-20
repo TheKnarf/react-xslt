@@ -13,7 +13,7 @@ const ValueOf = ({ xml, select }) => {
 	if(xml == null || typeof xml == 'undefined')
 		return [];
 	
-	const query = xpath(xml, select)[0],
+	const query = xpath(xml, select)[0];
 
 	return query.nodeValue || (query.firstChild || {data: [] }).data || [];
 }
