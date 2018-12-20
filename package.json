@@ -6,7 +6,8 @@
   "scripts": {
     "prepare": "babel src -d dist --copy-files",
     "test": "npm run prepare && jest",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+	 "publish:minor": "npm version minor && npm publish"
   },
   "keywords": [
     "react",
