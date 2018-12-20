@@ -1,6 +1,6 @@
 {
   "name": "react-xslt",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Use components like ApplyTemplate and ValueOf in React",
   "main": "dist/index.js",
   "scripts": {
