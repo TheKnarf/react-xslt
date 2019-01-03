@@ -6,7 +6,7 @@ const React = require('react'),
 const ApplyTemplate = ({ xml, select, Component }) => 
 	(xml !== null && typeof xml !== 'undefined') ?
 		((xpath(xml, select)||[])
-			.map(xml => <Component xml={xml} />)
+			.map((xml, i) => <Component key={select + i} xml={xml} />)
 		|| []) : [];
 
 const ValueOf = ({ xml, select }) => {
